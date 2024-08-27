@@ -16,10 +16,12 @@ populations and ancestries.
 ## Getting Started
 
 The `pgsc_benchmark` tool is currently distributed as both a Docker image _(recommended)_
-and an R script. Please see the relevant user manual for the implementation you plan to use:
+and an R script. A separate user manual is provided for each implementation.
 
-- Docker image: User-manual-Docker.md (link)
-- R script: User-manual-R.md (link)
+- Docker image
+  - User manual (Docker)
+- [R script](<https://github.com/PGScatalog/pgsc_benchmark/blob/main/pgsc_benchmark.R>)
+  - [User manual (R)](<https://github.com/PGScatalog/pgsc_benchmark/blob/main/User-manual-R.md>)
 
 In brief, four main steps are involved in the benchmarking process:
 
