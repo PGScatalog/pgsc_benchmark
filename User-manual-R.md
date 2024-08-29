@@ -1,5 +1,5 @@
 # `pgsc_benchmark` User Manual
-R implementation. Version 1.0 (Aug 2024)
+R implementation. Version 1.1 (Aug 2024)
 
 For the Docker implementation please see `User-manual-Docker.md`.
 
@@ -534,8 +534,8 @@ notation to specify multiple arguments for a single option.
       <td>&#8209;&#8209;outdir</td>
       <td>NA</td>
       <td>Specify a path to where the results directory should be created. If
-        <em>NA</em> (default), this will be set to the current working directory.
-        You should use the same directory across all runs, cohorts, phenotypes,
+        <em>NA</em> (default), this will be set to the current user's home directory
+        (~). You should use the same directory across all runs, cohorts, phenotypes,
         ancestries, etc. E.g.<br>--outdir=~/projects</td>
       </tr>
     <tr>
