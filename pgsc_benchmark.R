@@ -1,6 +1,6 @@
 #!/usr/bin/env Rscript
 
-### Polygenic Score Catalog - Benchmarking analysis (v1)
+### Polygenic Score Catalog - Benchmarking analysis (v1.1)
 ### Written by Joel T. Gibson (2024)
 ### Email: jtg29@cam.ac.uk
 ### Cardiovascular Epidemiology Unit
@@ -151,8 +151,9 @@ args <- lapply(args, set.arg)
 
 ############################ Directory Preparation #############################
 
+# Set output directory
 if (is.na(OUTDIR)) {
-  OUTDIR <- getwd()
+  OUTDIR <- "~"
 }
 
 ### Create directories for storing output files ###
