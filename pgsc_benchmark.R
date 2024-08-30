@@ -50,6 +50,14 @@ if (!requireNamespace("ggplot2", quietly = TRUE))
 if (!requireNamespace("r2redux", quietly = TRUE))
   install.packages("r2redux")
 
+# Load required packages
+suppressMessages(library("data.table"))
+suppressMessages(library("R.utils"))
+suppressMessages(library("pROC"))
+suppressMessages(library("boot"))
+suppressMessages(library("parallel"))
+suppressMessages(library("dplyr"))
+suppressMessages(library("r2redux"))
 suppressMessages(library("ggplot2"))
 suppressMessages(library("survival"))
 
