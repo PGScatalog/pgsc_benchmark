@@ -1042,3 +1042,40 @@ input data:
 <p align="center">
 <img width="75%" src="https://github.com/PGScatalog/pgsc_benchmark/blob/main/figures/Quantitative_trait.png">
 </p>
+
+## Post-processing
+
+The raw output produced the benchmarking tool should be used with caution, and
+commonly requires some amount of manual post-processing to ensure only high-quality
+data are retained for further analysis. By plotting the same metric for each score
+on a single graph, it is usually easy to identify which scores require further
+investigation. Below are some of the common reasons a PGS may need to be excluded:
+
+#### Overfit data
+
+Overfitting occurs when a PGS is evaluated in a cohort that was already used to
+develop that score (e.g. as the source of GWAS associations, or as a tuning sample).
+This leads to inflated effect sizes and unreliable indications of score performance.
+This can occur even if the sample overlap is small. We recommend excluding all scores
+developed using samples from your current evaluation cohort. This data is commonly
+reported in the PGS Catalog, however in some cases you may have to search the original
+PGS or GWAS publications to extract this data for yourself.
+
+#### Reversed effect sizes
+
+Some scores have an effect size (odds ratio, hazard ratio or &beta; coefficient) in
+the opposite direction to that expected. This can occur, for example, if the effect
+and non-effect alleles were switched during score development. However, these can
+still be strongly performing scores and do not necessarily need to be excluded. You
+may wish to ‘flip’ the reported effect sizes to facilitate the direct comparison of
+magnitudes between scores.
+
+#### Complex alleles
+
+The scoring files for some traits (e.g. Alzheimer’s disease and some autoimmune
+diseases) occasionally contain complex alleles (e.g. APOE or HLA alleles) that are not
+currently supported by the PGS Catalog Calculator. However, the calculator will still
+produce an output for these PGS, simply excluding such alleles from the final score.
+Therefore, care should be taken when interpreting these results. We recommend excluding
+scores including complex allele types, as these alleles commonly have large effect sizes
+that would normally drive the overall score.
