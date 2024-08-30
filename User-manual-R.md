@@ -471,7 +471,7 @@ Rscript pgsc_benchmark.R \
 If you need to run the benchmarking script interactively (e.g. using RStudio) you
 can specify options as variables within the script. All variables can be found
 within the _‘Data, Parameters and Running Requirements’_ section starting from line
-57. Remember to enclose character strings within quotation marks and use vector
+65. Remember to enclose character strings within quotation marks and use vector
 notation to specify multiple arguments for a single option.
 
 <table><tr><td><strong>Note:</strong> editing the R script directly will change
