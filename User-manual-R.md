@@ -1046,12 +1046,13 @@ investigation. Below are some of the common reasons a PGS may need to be exclude
 #### Overfit data
 
 Overfitting occurs when a PGS is evaluated in a cohort that was already used to
-develop that score (e.g. as the source of GWAS associations, or as a tuning sample).
-This leads to inflated effect sizes and unreliable indications of score performance.
-This can occur even if the sample overlap is small. We recommend excluding all scores
-developed using samples from your current evaluation cohort. This data is commonly
-reported in the PGS Catalog, however in some cases you may have to search the original
-PGS or GWAS publications to extract this data for yourself.
+develop that score (e.g. as the source of GWAS associations, or as a tuning
+sample). This leads to inflated effect sizes and unreliable indications of score
+performance.<sup>1,2</sup> This can occur even if the sample overlap is small.
+We recommend excluding all scores developed using samples from your current
+evaluation cohort. This data is commonly reported in the PGS Catalog, however in
+some cases you may have to search the original PGS or GWAS publications to extract
+this data for yourself.
 
 #### Reversed effect sizes
 
@@ -1071,3 +1072,13 @@ produce an output for these PGS, simply excluding such alleles from the final sc
 Therefore, care should be taken when interpreting these results. We recommend excluding
 scores including complex allele types, as these alleles commonly have large effect sizes
 that would normally drive the overall score.
+
+## References
+
+1. Wray, N., Yang, J., Hayes, B. _et al._ (2013) Pitfalls of predicting complex traits
+   from SNPs. _Nat Rev Genet._ **14**, 507–515 (2013).
+   doi: [10.1038/nrg3457](<https://doi.org/10.1038/nrg3457>)
+2. Ellis, C., Oliver, K., Harris, R. _et al._ (2024) Inflation of polygenic risk scores
+   caused by sample overlap and relatedness: Examples of a major risk of bias. _Am J
+   Hum Genet._ Online ahead of print.
+   doi: [10.1016/j.ajhg.2024.07.014](<https://doi.org/10.1016/j.ajhg.2024.07.014>)
