@@ -1076,7 +1076,7 @@ that would normally drive the overall score.
 ## References
 
 1. Wray, N., Yang, J., Hayes, B. _et al._ (2013) Pitfalls of predicting complex traits
-   from SNPs. _Nat Rev Genet._ **14**, 507–515 (2013).
+   from SNPs. _Nat Rev Genet._ **14**, 507–515.
    doi: [10.1038/nrg3457](<https://doi.org/10.1038/nrg3457>)
 2. Ellis, C., Oliver, K., Harris, R. _et al._ (2024) Inflation of polygenic risk scores
    caused by sample overlap and relatedness: Examples of a major risk of bias. _Am J
