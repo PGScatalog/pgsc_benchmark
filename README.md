@@ -15,13 +15,22 @@ populations and ancestries.
 
 ## Getting Started
 
-The `pgsc_benchmark` tool is currently distributed as both a Docker image _(recommended)_
-and an R script. A separate user manual is provided for each implementation.
+### Download
+
+The `pgsc_benchmark` tool is available to download as either a Docker or Singularity image. Please
+see the [user manual](<https://github.com/PGScatalog/pgsc_benchmark/blob/main/User-manual.md>)
+for download instructions.
 
 - Docker image
-  - User manual (Docker)
+- Singularity image
+
+An R implementation is also provided in case any issues are encountered running Docker or
+Singularity on your system. Please see the separate R user manual
+[here](<https://github.com/PGScatalog/pgsc_benchmark/blob/main/User-manual-R.md>).
+
 - [R script](<https://github.com/PGScatalog/pgsc_benchmark/blob/main/pgsc_benchmark.R>)
-  - [User manual (R)](<https://github.com/PGScatalog/pgsc_benchmark/blob/main/User-manual-R.md>)
+
+### Usage
 
 In brief, four main steps are involved in the benchmarking process:
 
@@ -30,7 +39,7 @@ In brief, four main steps are involved in the benchmarking process:
 3. Run the benchmarking tool on the outputs of (1) and (2)
 4. Post-processing and data interpretation
 
-A full description of each step is provided in the user manuals, along with detailed
+A full description of each step is provided in the user manual, along with detailed
 explanations of the output files produced.
 
 ## Credits
