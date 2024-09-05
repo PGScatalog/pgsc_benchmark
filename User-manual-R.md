@@ -1,12 +1,20 @@
-# `pgsc_benchmark` User Manual
-R implementation. Version 1.1 (Aug 2024)
+# User Manual: `pgsc_benchmark` (R version)
 
-For the Docker implementation please see `User-manual-Docker.md`.
+PGS Catalog Benchmarking Analysis
 
-## Software Requirements
+Version 1.1 (R)
+
+**Note:** this user manual relates to the R implementation of the benchmarking tool. If
+possible, we recommend using the Docker/Singularity implementation (see user manual
+[here](<https://github.com/PGScatalog/pgsc_benchmark/blob/main/User-manual.md>)).
+
+## Software requirements
 
 This script was developed using R version 4.3.3. You can download the latest version of
 R from _The R Project for Statistical Computing_ [website](<https://www.r-project.org>).
+
+After you have downloaded R, the benchmarking script can be downloaded
+[here](<https://github.com/PGScatalog/pgsc_benchmark/blob/main/pgsc_benchmark.R>).
 
 Additional software is required to run the PGS Catalog Calculator (e.g. Nextflow, Docker).
 Please see the [online calculator documentation](<https://pgsc-calc.readthedocs.io/en/latest/>)
