@@ -695,7 +695,8 @@ singularity run \
       <td>--n-cores</td>
       <td>1</td>
       <td>Specify an integer number of cores to use (for parallel processing of PGS IDs). At least
-        8 cores are recommended if bootstrapping is to be used. E.g.<br>--n-cores=8</td>
+        8 cores are recommended if bootstrapping is to be used. <strong>Note:</strong> make sure your
+        container is configured to use the specified number of resources. E.g.<br>--n-cores=8</td>
     </tr>
     <tr>
       <td>&#8209;&#8209;run&#8209;dems<br>&#8209;&#8209;run&#8209;metrics<br>
