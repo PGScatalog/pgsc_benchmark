@@ -1073,13 +1073,14 @@ magnitudes between scores.
 
 #### Complex alleles
 
-The scoring files for some traits (e.g. Alzheimer’s disease and some autoimmune
-diseases) occasionally contain complex alleles (e.g. APOE or HLA alleles) that are not
-currently supported by the PGS Catalog Calculator. However, the calculator will still
-produce an output for these PGS, simply excluding such alleles from the final score.
-Therefore, care should be taken when interpreting these results. We recommend excluding
-scores including complex allele types, as these alleles commonly have large effect sizes
-that would normally drive the overall score.
+The scoring files for some traits (e.g. Alzheimer’s disease and some autoimmune diseases)
+occasionally contain complex alleles (e.g. APOE or HLA alleles) that are not currently
+supported by the PGS Catalog Calculator. However, the calculator will still produce an
+output for these PGS, simply excluding such alleles from the final score. Therefore,
+care should be taken when interpreting these results. We recommend excluding scores
+including complex allele types, as these alleles commonly have large effect sizes that
+would normally drive the overall score. A list of PGS containing complex alleles can be found
+[here](<https://github.com/PGScatalog/pgsc_benchmark/blob/main/PGS_complex_alleles.xlsx>).
 
 ## References
 
