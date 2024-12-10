@@ -45,7 +45,6 @@ explanations of the output files produced.
 ## Credits
 
 Written by Joel T. Gibson\
-Email: [jtg29@cam.ac.uk](mailto:jtg29@cam.ac.uk)\
 Cardiovascular Epidemiology Unit\
 Department of Public Health and Primary Care\
 Victor Phillip Dahdaleh Heart and Lung Research Institute\
