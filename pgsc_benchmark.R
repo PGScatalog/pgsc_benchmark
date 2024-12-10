@@ -1,6 +1,6 @@
 #!/usr/bin/env Rscript
 
-### Polygenic Score Catalog - Benchmarking analysis (v1.1)
+### Polygenic Score Catalog - Benchmarking analysis (v1.2)
 ### Written by Joel T. Gibson (2024)
 ### Email: jtg29@cam.ac.uk
 ### Cardiovascular Epidemiology Unit
