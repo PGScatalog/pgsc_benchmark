@@ -185,9 +185,14 @@ pgs.cols <- function() {
   # Extract column names
   one.row <- data.table::fread(PGS.FILE, nrows = 1, showProgress = FALSE)
   all.cols <- colnames(one.row)
+  num.cols <- ncol(one.row)
   
   # Specify required columns
-  col.classes <- c(rep("character", 2), "factor", rep("NULL", 5))
+  if (num.cols == 8) {
+    col.classes <- c(rep("character", 2), "factor", rep("NULL", 5))
+  } else {
+    col.classes <- c(rep("character", 3), "factor", rep("NULL", 5))
+  }
   col.classes[match(score.types, all.cols)] <- "numeric"
   
   return(col.classes)
@@ -197,8 +202,17 @@ pop.cols <- function() {
   # Returns a vector specifying which columns to import from the file
   # containing population similarity data (needed to speed up import)
   
-  col.classes <- c(rep("character", 2), rep("numeric", 10), rep("NULL", 7),
-                   "character", rep("NULL", 3))
+  # find number of columns in population similarity file
+  one.row <- data.table::fread(POP.FILE, nrows = 1, showProgress = FALSE)
+  num.cols <- ncol(one.row)
+   
+  if (num.cols == 23) {
+    col.classes <- c(rep("character", 2), rep("numeric", 10), rep("NULL", 7),
+                     "character", rep("NULL", 3))
+  } else {
+    col.classes <- c(rep("character", 3), rep("numeric", 10), rep("NULL", 7),
+                     "character", rep("NULL", 3))
+  }
   
   return(col.classes)
 }
